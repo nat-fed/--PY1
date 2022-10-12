@@ -15,7 +15,7 @@ for i in list_months:
         spend += spend * increase
         delta = salary - spend
         need_money += abs(delta)
-
 # TODO Оформить решение
 
 print(round(need_money))
+
