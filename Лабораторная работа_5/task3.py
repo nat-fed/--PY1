@@ -5,8 +5,8 @@ def get_unique_list_numbers() -> list[int]:
     stop = 10
     count = 15
     list_numbers=[]
-    while len(list_numbers) < count:
-        if stop - start >= count:
+    if stop - start >= count:
+        while len(list_numbers) < count:
             num = randint(start, stop)
             if num not in list_numbers:
                 list_numbers.append(num)
