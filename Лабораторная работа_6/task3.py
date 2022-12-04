@@ -1,6 +1,6 @@
 OUTPUT_FILE = "output.csv"
 
-def to_csv_file(filename, headers=[], rows=[], delimiter = ",", new_line = "\n" ) :
+def to_csv_file(filename, headers=[], rows=[], delimiter=",", new_line="\n"):
     with open(filename, "w") as f:
         headers_str = delimiter.join(headers)
         f.writelines(headers_str + new_line)
